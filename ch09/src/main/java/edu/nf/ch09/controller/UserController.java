@@ -14,12 +14,13 @@ import javax.annotation.Resources;
  * @author Administrator
  * @date 2020/12/3
  */
-//使用Component注解表示类，表示为容器受管的Bean
+//使用@Component注解标识类，表示为容器受管的Bean
 //value属性用于指定Bean的id，如果不指定，默认就是类名
 //将首字母变为小写后作为ID
 //@Component("controller")
 //从3.0后开始，每一个层都有对应的注解来标识，作用和
 //@Component注解一样的，这样标识起来更加明确
+//@Component(value = "")
 @Controller("userController")
 //@Scope注解用于指定Bean的作用域，作用和xml中的一致，默认单利
 @Scope("prototype")
@@ -43,10 +44,12 @@ public class UserController {
     //注入service对象
     //@Autowired注解用于完成注入配置，
     //可以标识在set方法上，构造方法上，字段上
+
     //注意：当只有一个实现类的时候，Spring
     //会自动找到它并直接注入进来，
-    //如果有多个实现类的时候，就必须结合
-    //@Qualifier注解一起使用，这个注解的作用是
+    //如果有多个实现类的时候，先根据变量名称作为id从容器中查找,
+    //如果匹配得到，则直接返回，匹配不到则抛出有多个类实现的异常，
+    //此时就必须结合@Qualifier注解一起使用，这个注解的作用是
     //指定要注入哪一个实现类
     //@Autowired
 
