@@ -34,7 +34,7 @@ public class StuServiceImpl implements UserService {
         System.out.println("执行自定义的init方法");
     }
 
-    //@PerDestroy注解标识自定义的销毁方法
+    //@PreDestroy注解标识自定义销毁方法
     @PreDestroy
     public void destroy(){
         System.out.println("执行自定义的destroy方法");

@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
+import javax.annotation.Resources;
+
 /**
  * @author Administrator
  * @date 2020/12/3
@@ -22,9 +25,13 @@ import org.springframework.stereotype.Controller;
 @Scope("prototype")
 public class UserController {
     //字段注入
-    @Autowired
+    //@Autowired
     //通过@Qualify制定Bean的id
     //@Qualifier("userService")
+    //也也已使用@Ressource注解来注入，它是javax包下提供的注解
+    //Spring可以支持此注解，name指定要注入的Bean的id
+    //但这个注解只能标识在字段以及set方法上，不能标注在构造方法上
+    @Resource(name = "stuService")
     private UserService userService;
 
     //构造方法注入
@@ -41,7 +48,9 @@ public class UserController {
     //如果有多个实现类的时候，就必须结合
     //@Qualifier注解一起使用，这个注解的作用是
     //指定要注入哪一个实现类
-   /* @Autowired
+    //@Autowired
+
+    /*@Resource(name = "stuService")
     public void setUserService(UserService userService) {
         this.userService = userService;
     }*/
