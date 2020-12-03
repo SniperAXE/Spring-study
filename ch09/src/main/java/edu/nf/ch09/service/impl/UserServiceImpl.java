@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @date 2020/12/3
  */
 //@Component("userService")
-//可以使用
+//可以使用@Service注解来标识业务层
 @Service("userService")
 public class UserServiceImpl implements UserService {
     private UserDao userDao;
