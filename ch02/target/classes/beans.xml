@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 创配people,scope属性用于指定bean的作用域，默认是单例的，
+     也就是容器中只有一个bean的实例，这样，每次从容器中获取bean时
+     返回的多是一个对象，如果想容器每次返回不同的实例，那么就设置为prototype-->
+    <bean id="people" class="edu.nf.ch02.test.People" scope="prototype"/>
+
+</beans>

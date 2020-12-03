@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 创配people,scope属性用于指定bean在容器中的作用范围，默认是单例的，
+     也就是容器中只有一个bean的实例，这样，每次从容器中获取bean时
+     返回的多是一个对象，如果想容器每次返回不同的实例，那么就设置为prototype
+     在web环境中，还有request和session等作用域的设置，表示在请求范围内
+     还是绘画范围内有效-->
+    <bean id="people" class="edu.nf.ch06.ch02.test.People" scope="prototype"/>
+
+</beans>
