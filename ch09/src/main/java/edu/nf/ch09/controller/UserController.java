@@ -31,7 +31,7 @@ public class UserController {
     //@Qualifier("userService")
     //也也已使用@Ressource注解来注入，它是javax包下提供的注解
     //Spring可以支持此注解，name指定要注入的Bean的id
-    //但这个注解只能标识在字段以及set方法上，不能标注在构造方法上
+    //但这个注解只能标识在字段以及set方法上，不能标注在构造方法上】
     @Resource(name = "stuService")
     private UserService userService;
 

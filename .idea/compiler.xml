@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ch12" />
         <module name="ch09" />
         <module name="ch08" />
         <module name="ch07" />
@@ -16,6 +17,8 @@
         <module name="ch02" />
         <module name="ch01" />
         <module name="ch08-demo1" />
+        <module name="ch11" />
+        <module name="ch10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +40,9 @@
       <module name="ch08-copy" options="-parameters" />
       <module name="ch08-demo1" options="-parameters" />
       <module name="ch09" options="-parameters" />
+      <module name="ch10" options="-parameters" />
+      <module name="ch11" options="-parameters" />
+      <module name="ch12" options="-parameters" />
       <module name="spring-study" options="" />
     </option>
   </component>
