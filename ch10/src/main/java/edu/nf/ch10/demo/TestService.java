@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 //从classpath路径下找到data.properties文件
 @PropertySource(value = "classpath:data.properties")
 public class TestService {
-    //@Value注解中使用SqEl表达式指定资源文件中的key
+    //@Value注解中使用Sql表达式指定资源文件中的key
     @Value("${name}")
     private String name;
     @Value("${age}")
