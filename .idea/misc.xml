@@ -11,6 +11,7 @@
       <set>
         <option value="$PROJECT_DIR$/ch08-2/pom.xml" />
         <option value="$PROJECT_DIR$/ch08-copy/pom.xml" />
+        <option value="$PROJECT_DIR$/ch18/pom.xml" />
       </set>
     </option>
   </component>

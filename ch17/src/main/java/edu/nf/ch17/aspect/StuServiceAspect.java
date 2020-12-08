@@ -47,7 +47,7 @@ public class StuServiceAspect {
     }
 
     /**
-     * 后置通知
+     *asdf 后置通知
      * @param jp
      * @param returnVal
      */

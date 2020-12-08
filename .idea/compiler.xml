@@ -21,6 +21,7 @@
         <module name="ch12" />
         <module name="ch11" />
         <module name="ch10" />
+        <module name="ch17-1" />
         <module name="ch17" />
         <module name="ch08-demo1" />
         <module name="ch09" />
@@ -29,6 +30,7 @@
     <bytecodeTargetLevel>
       <module name="ch08-2" target="1.8" />
       <module name="ch08-copy" target="1.8" />
+      <module name="ch18" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -53,6 +55,8 @@
       <module name="ch15" options="-parameters" />
       <module name="ch16" options="-parameters" />
       <module name="ch17" options="-parameters" />
+      <module name="ch17-1" options="-parameters" />
+      <module name="ch18" options="-parameters" />
       <module name="spring-study" options="" />
     </option>
   </component>
